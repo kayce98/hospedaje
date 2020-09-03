@@ -39,7 +39,11 @@ class User extends Authenticatable
     ];
 
     public function person(){
-        return $this->belongsTo('App\Person','people_id');
+        return $this->belongsTo(Person::class,'people_id');
+    }
+
+    public function role(){
+        return $this->belongsTo(Role::class,'role_id');
     }
 
 }

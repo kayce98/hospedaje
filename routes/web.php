@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('user', 'UserController');
+
+Route::post('/person/verificar', 'PersonController@verificar')->name('person.verificar');
+
+Route::get('/user/{dni}','UserController@create1')->name('user.create1');
