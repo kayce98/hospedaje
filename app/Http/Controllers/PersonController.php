@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PersonController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function verificar(Request $request){
         // Recibir los datos de la persona y ver si existe en la base de datos
         //      =>Si existe en la base de datos se va a comparar los datos y si:  

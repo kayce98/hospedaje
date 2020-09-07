@@ -63,25 +63,26 @@
                                                 <td>{{$user->person->surname}}</td>
                                                 <td>{{$user->email}}</td>
                                                 <td>
-                                                    <form action="{{route('user.show',$user->id)}}" method="get">
+                                                    <form action="{{route('user.show',$user->id)}}" method="GET">
                                                         @csrf
                                                         <button type="submit" class="btn btn-block btn-info ">
                                                             <i class="fas fa-eye"></i>
                                                         </button>
                                                     </form>
                                                 </td>
-                                                <td>
+                                                <!-- <td>
                                                     <form action="{{route('user.edit',$user->id)}}" method="get">
                                                         @csrf
                                                         <button type="submit" class="btn btn-block btn-secondary">
                                                             <i class="fas fa-edit"></i>
                                                         </button>
                                                     </form>
-                                                </td>
+                                                </td> -->
                                                 <td>
-                                                    <form action="{{route('user.edit',$user->id)}}" method="DELETE">
+                                                    <form action="{{route('user.destroy',$user)}}" method="POST">
                                                         @csrf
-                                                        <button type="submit" class="btn btn-block btn-danger">
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-block btn-danger" onclick="return confirm('Estas seguro que desea eliminar?')">
                                                             <i class="fas fa-trash-alt"></i>
                                                         </button>
                                                     </form>
