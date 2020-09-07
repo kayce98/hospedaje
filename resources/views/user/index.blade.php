@@ -31,9 +31,9 @@
                             <div class="card">
                                 <div class="card-header">
                                     <form action="{{route('user.create')}}" method="get">
-                                        <button type="submit" class="btn btn-block btn-success " style="width:10%;">
+                                        <button type="submit" class="btn btn-block btn-success" style="width:10%;">
                                             <i class="fas fa-user-plus"></i>
-                                            ADD
+                                            <label for="">ADD</label>
                                         </button>
                                     </form>
                                 </div>
@@ -94,13 +94,7 @@
                                 </div>
                                 <!-- /.card-body -->
                                 <div class="card-footer clearfix">
-                                    <ul class="pagination pagination-sm m-0 float-right">
-                                        <li class="page-item"><a class="page-link" href="#">«</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">»</a></li>
-                                    </ul>
+                                    {{ $users->links() }}
                                 </div>
                             </div>
                         </div>

@@ -10,6 +10,12 @@
             <input id="people_id" type="hidden" class="form-control" name="people_id" value="{{ session('person')->id }}" required>
         </div>
     </div>
+    @else
+    <div class="form-group row" style="padding-top: 10px;">
+        <div class="col-md-6">
+            <input id="people_id" type="hidden" class="form-control" name="people_id" value="{{ old('people_id') }}" required autocomplete="people_id">
+        </div>
+    </div>
     @endif
     <div class="form-group row" style="padding-top: 10px;">
         <label for="username" class="col-md-4 col-form-label text-md-right">Usuario</label>
