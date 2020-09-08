@@ -44,8 +44,8 @@
                                         <thead>
                                             <tr>
                                                 <th style="width: 10px">#</th>
-                                                <th>Numero</th>
-                                                <th>Numero Cuartos</th>
+                                                <th>Nro cuarto</th>
+                                                <th>Cantidad de Cuartos</th>
                                                 <th>Tamaño Cama</th>
                                                 <th>Piso</th>
                                                 <th style="width: 40px">Tiene baño?</th>

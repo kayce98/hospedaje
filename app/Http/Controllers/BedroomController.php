@@ -66,9 +66,9 @@ class BedroomController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Bedroom $bedroom)
     {
-        //
+        return view('bedroom.show', compact('bedroom'));
     }
 
     /**
