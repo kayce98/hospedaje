@@ -26,3 +26,5 @@ Route::resource('user', 'UserController');
 Route::post('/person/verificar', 'PersonController@verificar')->name('person.verificar');
 
 Route::get('/user/{dni}','UserController@create1')->name('user.create1');
+
+Route::resource('bedroom', 'BedroomController');
