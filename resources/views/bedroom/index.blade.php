@@ -74,17 +74,10 @@
                                                     </form>
                                                 </td>
                                                 <td>
-                                                    <form action="{{route('bedroom.edit',$bedroom->id)}}" method="get">
+                                                    <form action="{{route('bedroom.destroy',$bedroom)}}" method="POST">
                                                         @csrf
-                                                        <button type="submit" class="btn btn-block btn-secondary">
-                                                            <i class="fas fa-edit"></i>
-                                                        </button>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form action="{{route('bedroom.edit',$bedroom->id)}}" method="DELETE">
-                                                        @csrf
-                                                        <button type="submit" class="btn btn-block btn-danger">
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-block btn-danger" onclick="return confirm('Estas seguro que desea eliminar?')">
                                                             <i class="fas fa-trash-alt"></i>
                                                         </button>
                                                     </form>
