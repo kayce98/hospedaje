@@ -45,7 +45,7 @@
                                             <tr>
                                                 <th style="width: 10px">#</th>
                                                 <th>Nro cuarto</th>
-                                                <th>Cantidad de Cuartos</th>
+                                                <th>Cantidad Cama</th>
                                                 <th>Tamaño Cama</th>
                                                 <th>Piso</th>
                                                 <th style="width: 40px">Tiene baño?</th>
@@ -70,6 +70,14 @@
                                                         @csrf
                                                         <button type="submit" class="btn btn-block btn-info ">
                                                             <i class="fas fa-eye"></i>
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                                <td>
+                                                    <form action="{{route('bedroom.edit',$bedroom->id)}}" method="get">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-block btn-secondary">
+                                                            <i class="fas fa-edit"></i>
                                                         </button>
                                                     </form>
                                                 </td>

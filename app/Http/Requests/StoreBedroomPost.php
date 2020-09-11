@@ -23,13 +23,14 @@ class StoreBedroomPost extends FormRequest
      */
     public function rules()
     {
+       
         return [
             'nro' => ['required', 'numeric'],
             'nro_beds' => ['required', 'numeric'],
             'size_beds' => ['required'],
             'floor' => ['required', 'numeric'],
             'is_bath' => ['required', 'boolean'],
-            'price' => ['required', 'numeric']
+            'price' => ['required', 'numeric', 'int']
 
         ];
     }

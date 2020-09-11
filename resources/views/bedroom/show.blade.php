@@ -44,7 +44,7 @@
                                                 <td class="text-md-center">{{ $bedroom->nro }}</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-md-right">{{ __('Cantidad de Cuartos:') }}</td>
+                                                <td class="text-md-right">{{ __('Cantidad Cama:') }}</td>
                                                 <td class="text-md-center">{{ $bedroom->nro_beds }}</td>
                                             </tr>
                                             <tr>
